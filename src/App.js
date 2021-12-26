@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import ContactUs from "./components/Contact-us";
+import Datatable from "./components/Datatable";
 function App() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    text: "",
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container mx-auto flex flex-col items-center justify-center my-5">
+        <div className="flex mb-10">
+          <ContactUs formData={formData} setFormData={setFormData} />
+        </div>
+        <div className="flex mt-5">
+          <Datatable formData={formData} />
+        </div>
+      </div>
     </div>
   );
 }
