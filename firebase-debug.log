@@ -1,0 +1,101 @@
+[debug] [2021-12-26T17:52:28.526Z] ----------------------------------------------------------------------
+[debug] [2021-12-26T17:52:28.530Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-12-26T17:52:28.531Z] CLI Version:   9.22.0
+[debug] [2021-12-26T17:52:28.531Z] Platform:      linux
+[debug] [2021-12-26T17:52:28.531Z] Node Version:  v14.15.4
+[debug] [2021-12-26T17:52:28.532Z] Time:          Sun Dec 26 2021 23:22:28 GMT+0530 (India Standard Time)
+[debug] [2021-12-26T17:52:28.532Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-26T17:52:28.633Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-26T17:52:28.634Z] > authorizing via signed-in user (rrjoshi055@gmail.com)
+[debug] [2021-12-26T17:52:28.634Z] [iam] checking project contact-us-7d587 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-26T17:52:28.638Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-26T17:52:28.638Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-26T17:52:29.062Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 26 Dec 2021 17:52:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:29.140Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/contact-us-7d587:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-26T17:52:30.967Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Dec 2021 17:52:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1340","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:30.970Z] > refreshing access token with scopes: []
+[debug] [2021-12-26T17:52:30.970Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-26T17:52:31.273Z] <<< HTTP RESPONSE 200 {"date":"Sun, 26 Dec 2021 17:52:31 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:31.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/contact-us-7d587 [none]
+[debug] [2021-12-26T17:52:32.205Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/contact-us-7d587 200
+[debug] [2021-12-26T17:52:32.206Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/contact-us-7d587 {"projectId":"contact-us-7d587","projectNumber":"823157427788","displayName":"contact-us","name":"projects/contact-us-7d587","resources":{"hostingSite":"contact-us-7d587"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'contact-us-7d587'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-26T17:52:32.211Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-26T17:52:32.211Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-26T17:52:32.514Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 26 Dec 2021 17:52:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:32.609Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-26T17:52:34.961Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 26 Dec 2021 17:52:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[contact-us-7d587]: beginning deploy... 
+[info] i  hosting[contact-us-7d587]: found 29 files in build 
+[debug] [2021-12-26T17:52:35.768Z] > refreshing access token with scopes: []
+[debug] [2021-12-26T17:52:35.768Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-26T17:52:35.829Z] [hosting] hash cache [YnVpbGQ] stored for 29 files
+[debug] [2021-12-26T17:52:35.830Z] [hosting][hash queue][FINAL] {"max":745,"min":97,"avg":174.93103448275863,"active":0,"complete":29,"success":29,"errored":0,"retried":0,"total":29,"elapsed":815}
+[debug] [2021-12-26T17:52:36.149Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 26 Dec 2021 17:52:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:36.257Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions/f5d556ed56cad10b:populateFiles [none]
+[debug] [2021-12-26T17:52:36.258Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions/f5d556ed56cad10b:populateFiles {"files":{"/index.html":"f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199","/manifest.json":"0958a5e0c831126100c8c2d06a6bbaa665a3900f21aaff4130238a6f5a113aa1","/asset-manifest.json":"ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398","/static/js/787.cee0a54c.chunk.js":"1993c5441238798df0ef42d9f0334075b8a5363932907b68742dc5744a6a9330","/robots.txt":"2544ca049f223a42bff01f72ad930a5edba75bbb7199d0f8430a02ff5aca16ec","/static/js/787.cee0a54c.chunk.js.map":"1610305a8cd29f57331d6eea016dad1b66abc823e75f8da7bcb7bd55ac7c85f2","/static/js/main.d4fabc53.js.LICENSE.txt":"9488224382c840edc2c9b55a55fbc8dfa893fe891b6259c3185001ed50839200","/static/media/arrow_left.db6e2d88c7c35a775ce4.svg":"3ef4bf0d094812984857b3109762937132dfbd7d3b486fd16f0b56af2592851b","/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg":"cb515e871c1007a7d7b74612dca95884aca13bc5c4e8182534140d5e10475e2e","/static/media/fa-regular-400.491974d108fe4002b2aa.ttf":"5d640e7fcd5271da0c8861b80bd3051439af8464ec0386ecb592ff516f1b21ab","/static/media/fa-regular-400.77206a6bb316fa0aded5.eot":"f3e1a1b79ea3bb3ee0a54aeb8e2c720d0556df3144cf1f157c62152040dfc2e2","/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff":"b5822629f9aa7fa1212241d2ef88da7aadda1b21f7e1b0e48209a8e7a43dee58","/static/media/fa-regular-400.7a3337626410ca2f4071.woff2":"a23ebe7c52811e8f2afe735d2cae359e8d2d928485d5d3bbbbaaf3b98ebf0126","/static/media/fa-regular-400.4689f52cc96215721344.svg":"4673fab0e0a8c583d9ccf3c3e226b1ece627a84c62c82162f55739fe52d85f6e","/static/media/fa-brands-400.d878b0a6a1144760244f.woff2":"20f08c02f148d1ed6881cefa39c20e930ddb6d4cbd38d7f1ce3bda9249d6cba0","/static/media/fa-solid-900.1551f4f60c37af51121f.woff2":"aed8eeb5b455b7a9b02789d91a7c19d68753448bd9df5f11214f47f9fd01769e","/static/media/fa-brands-400.2285773e6b4b172f07d9.woff":"a30de497ef5e43fdb37209bde633eec22466f0b2e2eeec3c3baec16e996a211a","/static/media/fa-brands-400.23f19bb08961f37aaf69.eot":"2b8904cbe4e6525f40c5ac73f1394fc86c8fc00dc5d23f0c37a41c4a3da2dedf","/static/media/fa-brands-400.527940b104eb2ea366c8.ttf":"ea728d2f6b984913dbd98765a6734a1017d4101ad7dde14550a0db4a8286a927","/static/media/fa-solid-900.eeccf4f66002c6f2ba24.woff":"38afcab3a4ee7e5606f151984ab326c9d3f48d359520501f90db159daf709123","/static/media/fa-solid-900.be9ee23c0c6390141475.ttf":"1173dbc2eb0ebc6cb4549ecc55bdc9ea8cab6d93cc086dd934e2a3877d7c2e16","/static/media/fa-solid-900.9bbb245e67a133f6e486.eot":"9e20cfd5ba71dd8e1670eed5cd392aad40ac2030ff85a44ef70bcb3383a62214","/static/css/main.c27c110b.css":"60a937e13cacec77a385fce860450d16d04214bb3e7400b95568ef8288927ef9","/pngegg.png":"996d0ba6209e72a4aaf516d34d86ffc31331358869e49e989b54cc181876824a","/static/js/main.d4fabc53.js":"840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c","/static/css/main.c27c110b.css.map":"d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12","/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg":"c06d5e5a9df307aadc921bc15ef100cbbe81489febb71ec2740c26429f30f786","/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg":"16bd190b1a3c9fbbfa4dae3489f917655e69fb53c6ebc565f1c5214089c88478","/static/js/main.d4fabc53.js.map":"8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce"}}
+[debug] [2021-12-26T17:52:38.239Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions/f5d556ed56cad10b:populateFiles 200
+[debug] [2021-12-26T17:52:38.239Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions/f5d556ed56cad10b:populateFiles {"uploadRequiredHashes":["8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce","d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12","ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398","f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199","840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files"}
+[debug] [2021-12-26T17:52:38.247Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce [none]
+[debug] [2021-12-26T17:52:38.248Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce [stream]
+[debug] [2021-12-26T17:52:38.252Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12 [none]
+[debug] [2021-12-26T17:52:38.253Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12 [stream]
+[debug] [2021-12-26T17:52:38.254Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398 [none]
+[debug] [2021-12-26T17:52:38.255Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398 [stream]
+[debug] [2021-12-26T17:52:38.256Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199 [none]
+[debug] [2021-12-26T17:52:38.256Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199 [stream]
+[debug] [2021-12-26T17:52:38.257Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c [none]
+[debug] [2021-12-26T17:52:38.257Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c [stream]
+[debug] [2021-12-26T17:52:38.258Z] [hosting][populate queue][FINAL] {"max":2480,"min":2480,"avg":2480,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2491}
+[debug] [2021-12-26T17:52:38.259Z] [hosting] uploads queued: 5
+[debug] [2021-12-26T17:52:41.185Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398 200
+[debug] [2021-12-26T17:52:41.185Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/ade3c3007e93dadf642e7eb102ad0d235fe7567be7e2859efe0ff5ede1cdb398 [stream]
+[debug] [2021-12-26T17:52:41.823Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199 200
+[debug] [2021-12-26T17:52:41.823Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/f289560665dc28f40be87c8dd95c44ba39527b896481844e17a85c6e04ff2199 [stream]
+[debug] [2021-12-26T17:52:41.827Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce 200
+[debug] [2021-12-26T17:52:41.827Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/8ba11ce61c1c422280a1a40f6002c0cd1d762b4d525fd06213d6f2882b145fce [stream]
+[debug] [2021-12-26T17:52:41.829Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c 200
+[debug] [2021-12-26T17:52:41.829Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/840ca709c99e336c652b61c331b994d3faafcad4af6c14ce4f22a1d93e712e0c [stream]
+[debug] [2021-12-26T17:52:42.642Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12 200
+[debug] [2021-12-26T17:52:42.642Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/contact-us-7d587/versions/f5d556ed56cad10b/files/d185c513d486a694d2a62101913c2fd312b1386f2730ff014d879e2160f0fa12 [stream]
+[debug] [2021-12-26T17:52:42.643Z] [hosting][upload queue][FINAL] {"max":4399,"min":2941,"avg":3618.4,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":4403}
+[info] ✔  hosting[contact-us-7d587]: file upload complete 
+[debug] [2021-12-26T17:52:42.644Z] [hosting] deploy completed after 7681ms
+[debug] [2021-12-26T17:52:42.646Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "contact-us-7d587"
+    },
+    "site": "contact-us-7d587",
+    "version": "sites/contact-us-7d587/versions/f5d556ed56cad10b"
+  }
+]
+[info] i  hosting[contact-us-7d587]: finalizing version... 
+[debug] [2021-12-26T17:52:42.647Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-26T17:52:42.647Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-26T17:52:42.941Z] <<< HTTP RESPONSE 200 {"date":"Sun, 26 Dec 2021 17:52:43 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-26T17:52:43.047Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/contact-us-7d587/versions/f5d556ed56cad10b?updateMask=status  
+ {"status":"FINALIZED"}
